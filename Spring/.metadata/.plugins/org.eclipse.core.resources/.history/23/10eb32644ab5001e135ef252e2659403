@@ -1,0 +1,37 @@
+package functional_programming_with_java.com.programming;
+
+import java.util.List;
+
+public class FP02Functional {
+
+	public static void main(String[] args) {
+
+		List<Integer> numbers = List.of(12, 34, 23, 23, 23);
+		printAllNumbersInListFunctional(numbers);
+		printEvenNumbersInListFunctional(numbers);
+
+	}
+
+	private static void printEvenNumbersInListFunctional(List<Integer> numbers) {
+
+		// what to do
+		numbers.stream()
+			.filter(FP02Functional::isEven)//using filter 
+			.filter(FP02Functional::isEven)//using lambda expression 
+			.forEach(System.out::println);//method reference
+ 	}
+	private static void printAllNumbersInListFunctional(List<Integer> numbers) {
+		
+		// what to do
+		numbers.stream()
+		.forEach(System.out::println);//method reference
+	}
+
+	private static void print(int number) {
+		System.out.println(number);
+	}
+
+	private static boolean isEven(int number) {
+		return number%2 == 0;
+	}
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=learn-spring-security/C:\/Users\/HP\/.gradle\/caches\/modules-2\/files-2.1\/org.springframework.security\/spring-security-core\/6.2.4\/b1bb9c66df67cd6ecc5548dec8b37341cef11a80\/spring-security-core-6.2.4.jar=/gradle_used_by_scope=/main,test=/&lt;org.springframework.security.core.userdetails.jdbc(JdbcDaoImpl.class[JdbcDaoImpl" modifiers="33" timestamp="1714672874177"/>
+    <typeInfo handle="=learn-spring-security/C:\/Users\/HP\/.gradle\/caches\/modules-2\/files-2.1\/com.nimbusds\/nimbus-jose-jwt\/9.24.4\/29a1f6a00a4daa3e1873f6bf4f16ddf4d6fd6d37\/nimbus-jose-jwt-9.24.4.jar=/gradle_used_by_scope=/main,test=/&lt;com.nimbusds.jose.jwk.source(JWKSource.class[JWKSource" modifiers="1537" timestamp="1715089362915"/>
+    <typeInfo handle="=learn-spring-security/C:\/Users\/HP\/.gradle\/caches\/modules-2\/files-2.1\/org.springframework.security\/spring-security-oauth2-jose\/6.2.4\/97eafa23d3dffc6db5a0e65e4517a297c39d29b7\/spring-security-oauth2-jose-6.2.4.jar=/gradle_used_by_scope=/main,test=/&lt;org.springframework.security.oauth2.jwt(NimbusJwtDecoder.class[NimbusJwtDecoder" modifiers="49" timestamp="1715089361675"/>
+</typeInfoHistroy>

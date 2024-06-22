@@ -1,0 +1,20 @@
+package functional_programming_with_java.com.programming;
+
+import java.util.List;
+
+public class FP03Exercise {
+
+	public static void main(String[] args) {
+
+//		Exercise 1 - print only odd no.
+		printOddNumber(List.of(12, 34, 23, 23, 23));
+		
+		 
+	}
+
+	private static void printOddNumber(List<Integer> numbers) {
+		 numbers.stream()
+		 	.filter(number -> number%2 != 0)
+		 	.forEach(System.out::println);
+	}
+ }

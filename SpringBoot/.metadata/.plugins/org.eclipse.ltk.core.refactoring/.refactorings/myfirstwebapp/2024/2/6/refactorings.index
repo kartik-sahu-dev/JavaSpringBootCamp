@@ -1,0 +1,8 @@
+1707038412461	Delete element
+1707219909556	Extract method 'getLoggedInUsername'
+1707220870358	Extract local variable 'username'
+1707220896430	Extract local variable 'password'
+1707221025204	Extract method 'createNewUser'
+1707221127584	Inline local variable 'password'
+1707565600224	Delete element
+1707569851009	Copy compilation unit

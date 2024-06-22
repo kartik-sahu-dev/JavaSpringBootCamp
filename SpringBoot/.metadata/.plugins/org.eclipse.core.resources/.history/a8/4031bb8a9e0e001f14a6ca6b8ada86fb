@@ -1,0 +1,17 @@
+package com.example.learnspringaop.aopexample.business;
+
+import java.util.Arrays;
+
+import org.springframework.stereotype.Repository;
+
+import com.example.learnspringaop.aopexample.data.DataService1;
+
+@Repository
+public class BusinessService1 {
+	private DataService1 dataService;
+	
+	public int calculateMax() {
+		int[] data = dataService.retrieveData();
+		return Arrays.stream(data).max().orElse(0);
+	}
+}

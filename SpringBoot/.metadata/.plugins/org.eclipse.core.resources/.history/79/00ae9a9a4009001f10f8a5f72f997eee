@@ -1,0 +1,15 @@
+package com.in28minutes.learnspringsecurity.basic;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+
+public class BasicAuthSecurityConfiguration {
+
+	@Bean
+	SecurityFilterChain securityFilterChain(HttpSecurity http) {
+		http.authorizeHttpRequests().anyRequest().authenticated();
+		http.formLogin();
+		return http.build();
+	}
+}

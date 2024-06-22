@@ -1,0 +1,27 @@
+package functional_programming_with_java.com.programming;
+
+import java.util.List;
+
+public class FP01Structured {
+
+	public static void main(String[] args) {
+		
+		List<Integer> numbers = List.of(12,34,23,23,23);
+//		printAllNumbersInListStructured(numbers);
+		printEvenNumbersInListStructured(numbers);
+	}
+
+	private static void printEvenNumbersInListStructured(List<Integer> numbers) {
+		for(int n : numbers){
+			if(n%2 == 0) {
+				System.out.println(n);
+			}
+		}
+	}
+
+	private static void printAllNumbersInListStructured(List<Integer> numbers) {
+		for(int n : numbers){
+			System.out.println(n);
+		}
+	}
+}

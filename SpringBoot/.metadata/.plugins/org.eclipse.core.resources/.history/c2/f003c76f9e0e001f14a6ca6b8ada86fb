@@ -1,0 +1,5 @@
+package com.example.learnspringaop.aopexample.business;
+
+public class BusinessService1 {
+
+}

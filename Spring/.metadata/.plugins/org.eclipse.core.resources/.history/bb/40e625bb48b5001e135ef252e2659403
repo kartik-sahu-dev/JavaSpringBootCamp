@@ -1,0 +1,18 @@
+package functional_programming_with_java.com.programming;
+
+import java.util.List;
+
+public class FP01Structured {
+
+	public static void main(String[] args) {
+		
+		List<Integer> of = List.of(12,34,23,23,23);
+		printAllNumbersInListStructured(of);
+	}
+
+	private static void printAllNumbersInListStructured(List<Integer> numbers) {
+		for(int n : numbers){
+			System.out.println(n);
+		}
+	}
+}

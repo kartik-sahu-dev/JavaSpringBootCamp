@@ -1,0 +1,33 @@
+package com.example.learnoauth.welcome;
+
+import java.security.Principal;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Welcome {
+	
+	@GetMapping("/")
+    public String welcomeBack() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String username = extractUsername(authentication);
+        return "<h3>Welcome: " + username + "</h3>";
+    }
+    
+    private String extractUsername(Authentication authentication) {
+        // Extract the username from User Attributes
+        String userAttributes = authentication.getDetails().toString();
+        String[] attributePairs = userAttributes.split(", ");
+        for (String pair : attributePairs) {
+            String[] keyValue = pair.split("=");
+            if (keyValue.length == 2 && keyValue[0].equals("name")) {
+                return keyValue[1];
+            }
+        }
+        return "Unknown"; // Return a default value if username is not found
+    }
+}

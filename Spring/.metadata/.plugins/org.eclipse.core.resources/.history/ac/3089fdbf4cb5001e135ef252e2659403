@@ -1,0 +1,29 @@
+package functional_programming_with_java.com.programming;
+
+import java.util.List;
+
+public class FP03Exercise {
+
+	public static void main(String[] args) {
+
+//		Exercise 1 - print only odd no.
+		printOddNumber(List.of(12, 34, 23, 63, 25));
+
+//		Exercise 2 - print all courses individually
+		List<String> courses = List.of("Spring","Spring boot","API","AWS","Azure");
+		printAllCourse(courses);
+		 
+//		Exercise 3 - print course containing word "Spring"
+	}
+
+	private static void printAllCourse(List<String> courses) {
+		courses.stream()
+			.forEach(System.out::println);
+	}
+
+	private static void printOddNumber(List<Integer> numbers) {
+		 numbers.stream()
+		 	.filter(number -> number%2 != 0)
+		 	.forEach(System.out::println);
+	}
+ }

@@ -1,0 +1,27 @@
+package functional_programming_with_java.com.programming;
+
+import java.util.List;
+
+public class FP02Functional {
+
+	public static void main(String[] args) {
+		
+		printAllNumbersInListFunctional(List.of(12,34,23,23,23));
+	}
+
+	private static void printAllNumbersInListFunctional(List<Integer> numbers) {
+		
+		//what to do
+		numbers.stream()
+			.forEach(FP02Functional::print);
+		
+		//How to loop numbers
+		for(int n : numbers){
+			System.out.println(n);
+		}
+	}
+
+	private static void print(int number) {
+		System.out.println(number);
+	}
+}

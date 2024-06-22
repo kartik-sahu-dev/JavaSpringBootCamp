@@ -1,0 +1,5 @@
+package com.example.learnspringaop.aopexample.aspects;
+
+public class LoggingAspects {
+
+}

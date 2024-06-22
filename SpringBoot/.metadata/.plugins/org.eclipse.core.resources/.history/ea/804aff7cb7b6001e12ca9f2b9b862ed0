@@ -1,0 +1,4 @@
+server.port=2688
+
+spring.mvc.view.prefix=/src/main/resources/META-INF/resources/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp

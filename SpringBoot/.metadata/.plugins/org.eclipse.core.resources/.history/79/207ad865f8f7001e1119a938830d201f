@@ -1,0 +1,21 @@
+package com.in28minutes.rest.webservices.restfulwebservices.versioning;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class VersioningPersonController {
+
+	@GetMapping("/v1/person")
+	public PersonV1 getFirstVersionPerson() {
+		return new PersonV1("Kartik Sahu");
+	}
+
+	@GetMapping("/v2/person")
+	public Name getSecondVersionPerson() {
+//		PersonV2 p =  new PersonV2(new Name("Kartik","Sahu"));
+		Name p = new Name("Kartik","Sahu");
+		System.out.println(p);
+		return p;
+	}
+}

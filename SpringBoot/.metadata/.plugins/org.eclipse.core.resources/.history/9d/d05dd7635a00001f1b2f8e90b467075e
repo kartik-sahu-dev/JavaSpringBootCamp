@@ -1,0 +1,20 @@
+package com.in28minutes.mockito.mockitodemo.business;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SomeBusinessImplMockTest {
+
+	@Test
+	void findTheGreatestFromAllData_basicScenario() { 
+		DataService dataServiceStub = new DataServiceStub();
+		SomeBusinessImpl businessImpl = new SomeBusinessImpl(dataServiceStub);
+		int result = businessImpl.findTheGreatestFromAllData();
+		
+		assertEquals(34,result);
+		
+	}
+ 
+}
+ 
